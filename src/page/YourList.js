@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ModalBody } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Games from "../components/Games"
 
 const YourList = () => {
@@ -18,7 +18,6 @@ const YourList = () => {
         const res = await fetch("/games")
         const data = await res.json()
     
-        console.log(data)
         return data
       }
     
